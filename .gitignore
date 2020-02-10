@@ -1,4 +1,4 @@
-.vscode
+.sass-cache
 *.zip
-_DS_Store
+.DS_Store
 node_modules
