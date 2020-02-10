@@ -1,5 +1,5 @@
 <?php
-require_once '../load.php';
+require_once 'load.php';
 $ip = $_SERVER['REMOTE_ADDR'];
 
 
@@ -25,13 +25,19 @@ if(isset($_POST['submit'])){
     <title>Welcome to the Login page</title>
 </head>
 <body>
-<?php echo !empty($message)?$message:'';?>
-<form action="admin_login.php" method="post">
-    <label>Username:</label><br>
-    <input type="text" name="username" value=""><br>
 
-    <label>Password:</label><br>
-    <input type="text" name="password" value=""> <br>
+<form action="index.php" method="post">
+    <label>First Name</label><br>
+    <input type="text" name="fname" value=""><br>
+
+    <label>Last Name</label><br>
+    <input type="text" name="lname" value=""><br>
+
+    <label>Email:</label><br>
+    <input type="text" name="email" value=""><br>
+
+    <label>Country</label><br>
+    <input type="text" name="country" value=""> <br>
 
     <button name="submit">Submit</button>
 </form>
