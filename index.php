@@ -1,7 +1,7 @@
 <?php
 
 require_once 'load.php';
-$ip = $_SERVER['REMOTE_ADDR'];
+
 
 
 if(isset($_POST['submit'])){
@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
     
     if(!empty($fname) && !empty($email)){
         //do the login here
-        $message = signup($fname, $lname, $email, $country);
+        $message = signup($fname, $lname, $country, $email);
     }else{
         $message = 'Please fill out the required fields';
     }
