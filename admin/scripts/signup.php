@@ -1,4 +1,6 @@
 <?php
+
+require_once '../index.php';
    
     function signup($fname, $lname, $country, $email){
         $pdo = Database::getInstance()->getConnection();
@@ -11,6 +13,8 @@
                 ':email'=>$email
             )
             );
+        echo $emailQuery;
+        exit;
         if($emailQuery>0){
             //Display Come back message
 
@@ -21,10 +25,13 @@
             //send out the returning email
         }else{
             //insert into database the info provided
+            $addUser = 'INSERT INTO ontario_summer.tbl_signup (fname, lname, country, lastupdate, email)
+            VALUES ("'.$fname.'", "'.$lname.'", "'.$country.'", now(), "'.$email.'")';
 
 
 
             //send out first time sub email
+            
         }
         
 
