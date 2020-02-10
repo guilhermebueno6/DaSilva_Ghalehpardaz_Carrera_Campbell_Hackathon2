@@ -1,6 +1,6 @@
 <?php
 
-require_once '../index.php';
+
    
     function signup($fname, $lname, $country, $email){
         $pdo = Database::getInstance()->getConnection();
@@ -13,8 +13,7 @@ require_once '../index.php';
                 ':email'=>$email
             )
             );
-        echo $emailQuery;
-        exit;
+        
         if($emailQuery>0){
             //Display Come back message
 
