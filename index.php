@@ -1,19 +1,30 @@
 <?php
+
 require_once 'load.php';
 $ip = $_SERVER['REMOTE_ADDR'];
 
 
 if(isset($_POST['submit'])){
-    $username = trim($_POST['username']);
-    $password = trim($_POST['password']);
+    $fname = trim($_POST['fname']);
+    $lname = trim($_POST['lname']);
+    $email = trim($_POST['email']);
+    $country = trim($_POST['country']);
 
-    if(!empty($username) && !empty($password)){
+
+    
+    if(!empty($fname) && !empty($email)){
         //do the login here
-        $message = login($username, $password, $ip);
+        $message = signup($fname, $lname, $email, $country);
     }else{
         $message = 'Please fill out the required fields';
     }
 }
+
+
+
+
+   
+   
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +36,7 @@ if(isset($_POST['submit'])){
     <title>Welcome to the Login page</title>
 </head>
 <body>
-
+<?php echo !empty($message)?$message:'';?>
 <form action="index.php" method="post">
     <label>First Name</label><br>
     <input type="text" name="fname" value=""><br>
