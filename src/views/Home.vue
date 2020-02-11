@@ -2,7 +2,7 @@
   <div class="home">
     <section class="hero">
       <video id="videoBG" autoplay muted loop>
-          <source src="@/assets/videos/Screensavervid-47mb.mp4" type="video/mp4">
+          <source src="@/assets/videos/Screensaver.mp4" type="video/mp4">
       </video>
       <div class="container">
         <h1 class="title">

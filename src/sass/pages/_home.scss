@@ -22,14 +22,15 @@
     h1 {
       color: white;
       text-align: center;
-      font-size: 4em;
+      font-size: 5em;
+      font-family: $accent-font;
     }
     button {
       display: table;
       background-color: $ot-green;
       color: white;
       padding: 15px 15px;
-      font-size: 14px;
+      font-size: 24px;
       border-radius: 5px;
       margin: 20px auto;
       border: none;
@@ -38,6 +39,7 @@
       color: white;
       text-align: center;
       font-size: 2em;
+      padding: 10px 0;
     }
   }
 }
@@ -47,52 +49,100 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 40vh;
   background-color: white;
   
   h2 {
-    font-size: 1.5em;
-    margin-top: 30px;
+    font-size: 2em;
+    max-width: 100vw;
+    text-align: center;
+    padding: 40px 0;
   }
 
   p {
-    font-size: 16px;
+    font-size: 24px;
     margin: 0 60px;
     background-color: $ot-beige;
-    padding: 60px;
+    padding: 80px;
+    width: 80vw;
   }
 }
 
 #locations {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 60vh;
+
   background-color: white;
 
   h2 {
-    font-size: 1.5em;
-    margin-top: 30px;
+    font-size: 2em;
+    max-width: 100vw;
+    text-align: center;
+    padding: 40px 0;
   }
 
+  // #Toronto { 
+  //   box-shadow: inset 10px 10px 0px 1000px rgba(38,89,97,0.5);
+  // }
+  // #Algonquin { 
+  //   box-shadow: inset 10px 10px 0px 1000px rgba(34,112,102,0.5);
+  // }
+  // #Niagara { 
+  //   box-shadow: inset 10px 10px 0px 1000px rgba(118,166,101,0.5);
+  // }
+  // #Muskoka { 
+  //   box-shadow: inset 10px 10px 0px 1000px rgba(255,221,91,0.5);
+  // }
+  // #Tobermory {
+  //   box-shadow: inset 10px 10px 0px 1000px rgba(38,89,97,0.5);
+  // }
+  // #Ottawa {
+  //   box-shadow: inset 10px 10px 0px 1000px rgba(34,112,102,0.5);
+  // }
 
-    #Toronto { 
-      box-shadow: inset 10px 10px 0px 200px rgba(38,89,97,0.5);
-    }
-    #Algonquin { 
-      box-shadow: inset 10px 10px 0px 200px rgba(34,112,102,0.5);
-    }
-    #Niagara { 
-      box-shadow: inset 10px 10px 0px 200px rgba(118,166,101,0.5);
-    }
-    #Muskoka { 
-      box-shadow: inset 10px 10px 0px 200px rgba(255,221,91,0.5);
-    }
-    #Tobermory {
-      box-shadow: inset 10px 10px 0px 200px rgba(38,89,97,0.5);
-    }
-    #Ottawa {
-      box-shadow: inset 10px 10px 0px 200px rgba(34,112,102,0.5);
-    }
+}
 
+.banner-content {
+  height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+
+  img {
+    width: 1200px;
+    height: 400px;
+  }
+  h1 {
+    min-width: 100vw;
+    font-size: 8em;
+    text-align: center;
+    margin-top: -300px;
+    color: white;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 24px;
+    padding: 60px;
+    width: 80vw;
+  }
+  ul {
+
+    li{
+    display: inline;
+    padding: 0 15px;
+
+    a {
+      text-decoration: none;
+      color: $dark-blue;
+      font-size: 24px;
+
+      &:hover {
+        color: $ot-yellow;
+      }
+    }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  
 }
