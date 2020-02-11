@@ -4,6 +4,7 @@ require_once 'load.php';
 
 
 
+
 if(isset($_POST['submit'])){
     $fname = trim($_POST['fname']);
     $lname = trim($_POST['lname']);
@@ -52,6 +53,19 @@ if(isset($_POST['submit'])){
 
     <button name="submit">Submit</button>
 </form>
+
+<!-- while loop for cycling through content on DB -->
+    <!-- <div class="city-thing">
+    <img src="images/<?php echo $row['image_name'];?>" alt="<?php echo $row['destination']?>"/>
+        <h2><?php echo $row['destination']; ?></h2>
+        <p><?php echo $row['description']; ?></p>
+        <ul>
+            <li>><?php echo $row['activity1']?><p><?php echo $row['icon1']?></p></li>
+            <li><?php echo $row['activity2']?><p><?php echo $row['icon2']?></p></li>
+            <li><?php echo $row['activity3']?><p><?php echo $row['icon3']?></p></li>
+        </ul>
+    </div> -->
+
     
 </body>
 </html>
