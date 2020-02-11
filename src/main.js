@@ -9,3 +9,15 @@ new Vue({
   //store,
   render: h => h(App)
 }).$mount('#app')
+
+// IDEA TO SAVE OUR ASSES
+
+//  const url = './index.php?fname=Guilherme&lname=Bueno&email=guilhermebueno6%40gmail.com&country=CA';
+//  fetch(url)
+//  .then(res => res.json())
+//  .then(data => {
+//     console.log(data);
+
+    
+//  })
+//  .catch((err) => console.log(err))
