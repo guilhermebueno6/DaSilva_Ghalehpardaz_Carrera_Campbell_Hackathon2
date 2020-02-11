@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
    
 
 ?>
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,7 +52,7 @@ if(isset($_POST['submit'])){
     <input type="text" name="country" value=""> <br>
 
     <button name="submit">Submit</button>
-</form> -->
+</form>
 
 <!-- while loop for cycling through content on DB -->
     <!-- <div class="city-thing">
@@ -67,5 +67,5 @@ if(isset($_POST['submit'])){
     </div> -->
 
     
-<!-- </body>
-</html> -->
+</body>
+</html>

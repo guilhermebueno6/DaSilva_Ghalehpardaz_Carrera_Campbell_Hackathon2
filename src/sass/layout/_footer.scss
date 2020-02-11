@@ -1,7 +1,27 @@
 .footer {
   background-color: $ot-beige;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
   
   img {
     width: 125px;
+    padding: 25px;
+  }
+
+  ul {
+    margin-left: auto;
+    li {
+      display: inline;
+      a {
+        color: $dark-blue;
+        padding: 10px;
+      }
+    }
+  }
+
+  p {
+    color: $dark-blue;
+    padding: 0 25px;
   }
 }
