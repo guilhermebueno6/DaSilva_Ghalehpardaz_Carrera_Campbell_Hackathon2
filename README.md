@@ -1,4 +1,4 @@
-![ThermoSecurity Logo](images/ThermoSecurity+Text.svg)
+![ThermoSecurity Logo](/src/assets/images/Vertical_OT_Logo.svg)
 # Ontario Tourism
 
 This is a website for Ontario Tourism focused on the short summer months and increasing annual non-resident visitation to Ontario
