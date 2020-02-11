@@ -1,10 +1,15 @@
 
-//design variables
-$primary-font :   ;
-$secondary-font:    ;
+// Fonts
+$primary-font : 'Gotham';
+$secondary-font: 'Avenir';
 
+// Colours
 $dark-blue: #265961;
 $green-blue: #227066;
 $ot-green: #76a665;
 $ot-yellow: #ffdd5b;
-$ot-biege: #fbfae1;
+$ot-beige: #fbfae1;
+
+// Viewport min/max
+$min-width: 300;
+$max-width: 1600;

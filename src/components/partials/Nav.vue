@@ -9,7 +9,6 @@
       </div>
       <!--Navbar-->
       <nav class="nav">
-          <h1 class="hidden">Links</h1>
           <ul class="nav-items">
               <li class="subscribe"><router-link to="/Register">Subscribe to our Newsletter</router-link></li>
               <li class="divide">|</li>
@@ -24,7 +23,6 @@
     </header>
     <!--Sidebar-->
     <nav id="sidebar">
-      <h1 class="hidden">Sidebar</h1>
       <ul class="sidebar-items">
         <li class="subscribe"><router-link to="/Register">Subscribe to our Newsletter</router-link></li>
         <li class="divide"><hr></li>
@@ -37,7 +35,17 @@
 </template>
 <script>
   export default {
-    name: 'Nav'
+    name: 'Nav',
+    mounted: function() {
+      function toggle() {
+          document.getElementById("nav-toggler").classList.toggle("fa-times");
+          document.getElementById("nav-toggler").classList.toggle("fa-bars");
+          document.getElementById("sidebar").classList.toggle("active");
+      }
+
+      var openMenu = document.getElementById('nav-toggler');
+      openMenu.addEventListener("click", toggle);
+    }
   }
 </script>
 

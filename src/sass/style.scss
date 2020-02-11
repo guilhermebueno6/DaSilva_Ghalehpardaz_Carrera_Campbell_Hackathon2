@@ -1,0 +1,21 @@
+// Imports
+@import "_vars";
+@import "layout/navbar";
+@import "layout/form";
+@import "layout/footer";
+@import "components/sidebar";
+@import "pages/home";
+@import "pages/register";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, a {
+  font-family: $primary-font;
+}
+
+p {
+  font-family: $secondary-font;
+}

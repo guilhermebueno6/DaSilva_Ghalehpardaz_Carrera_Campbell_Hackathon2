@@ -1,15 +1,15 @@
 <template>
   <div class="form">
     <form>
-        <p>Name</p>
+        <label for="name">Name</label>
         <input type="text" name="first" value="First"/>
         <input type="text" name="fast" value="Last"/>
-        <p>Country</p>
+        <label for="country">Country</label>
         <input type="text" name="country">
-        <p>Email</p>
+        <label for="email">Email</label>
         <input type="text" name="email">
         <br>
-        <input type="submit">
+        <button type="submit">Submit</button>
     </form>
   </div>
 </template>
