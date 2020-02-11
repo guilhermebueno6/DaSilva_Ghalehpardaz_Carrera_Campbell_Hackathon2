@@ -69,4 +69,30 @@
   justify-content: center;
   height: 60vh;
   background-color: white;
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+
+
+    #Toronto { 
+      box-shadow: inset 10px 10px 0px 200px rgba(38,89,97,0.5);
+    }
+    #Algonquin { 
+      box-shadow: inset 10px 10px 0px 200px rgba(34,112,102,0.5);
+    }
+    #Niagara { 
+      box-shadow: inset 10px 10px 0px 200px rgba(118,166,101,0.5);
+    }
+    #Muskoka { 
+      box-shadow: inset 10px 10px 0px 200px rgba(255,221,91,0.5);
+    }
+    #Tobermory {
+      box-shadow: inset 10px 10px 0px 200px rgba(38,89,97,0.5);
+    }
+    #Ottawa {
+      box-shadow: inset 10px 10px 0px 200px rgba(34,112,102,0.5);
+    }
+
 }
